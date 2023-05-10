@@ -13,6 +13,10 @@ plugins {
     alias(libs.plugins.kover) // Gradle Kover Plugin
 }
 
+sourceSets.main {
+    kotlin.srcDirs("src/main/kotlin")
+}
+
 group = properties("pluginGroup").get()
 version = properties("pluginVersion").get()
 

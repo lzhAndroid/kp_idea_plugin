@@ -15,4 +15,10 @@
     <applicationListeners>
         <listener class="com.github.lzhandroid.kpideaplugin.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
     </applicationListeners>
+    <actions>
+        <action id="KpPage" class="com.github.lzhandroid.kpideaplugin.actions.KpPage" text="KpPage"
+                description="KpPage" icon="/image/kp_icon.svg">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
